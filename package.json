@@ -1,0 +1,19 @@
+{
+  "name": "samplewebsite1",
+  "version": "1.0.0",
+  "description": "A sample static website, showcasing a landing page built with jQuery",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RayMathew/sampleStaticWebsite1.git"
+  },
+  "author": "Ray Mathew",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RayMathew/sampleStaticWebsite1/issues"
+  },
+  "homepage": "https://github.com/RayMathew/sampleStaticWebsite1#readme"
+}

@@ -8,6 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
           integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
           crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Navbar and Animated Intro</title>
 </head>
 <body>
@@ -22,14 +23,46 @@
             </ul>
         </div>
     </div>
+    <div class="wrapper content-hidden">
+        <nav>
+            <div class="logo">
+                LOGO
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#">Log In</a></li>
+            </ul>
+        </nav>
+        <section class="sec1">
+
+        </section>
+        <section class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officiis nobis numquam excepturi amet explicabo accusamus itaque praesentium quaerat vitae recusandae unde, quae ab necessitatibus quibusdam repellat, autem magnam asperiores similique nesciunt tempora, quam. Est, dicta, mollitia! Molestiae iure velit, eaque, quo quisquam ea, sequi neque vero cum illo facilis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, aliquid omnis asperiores, inventore, ipsam voluptate atque ea incidunt dolores ex cum commodi neque praesentium dolor quod, blanditiis repudiandae autem nostrum saepe minima molestiae architecto eligendi! Aliquam aliquid rem ducimus non quod voluptas cum harum excepturi fuga odio qui itaque voluptate laudantium, aut saepe tempore quibusdam esse pariatur perspiciatis. Labore, minima.</p>
+        </section>
+    </div>
     <script type="text/javascript">
         var intro = $('.intro');
+        var contentwrapper = $('.wrapper');
         setTimeout(function(){
             intro.removeClass('hidden');
         },800);
         setTimeout(function(){
             intro.fadeOut();
+            contentwrapper.removeClass('content-hidden');
         },3500);
+
+        $(window).on('scroll', function(){
+            if ($(window).scrollTop()){
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        });
     </script>
 </body>
 </html>
